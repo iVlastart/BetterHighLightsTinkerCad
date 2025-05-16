@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Better Highlighting",
+    "version": "1.0.0",
+     "content_scripts": [
+    {
+      "matches": ["https://www.tinkercad.com/things/*"],
+      "js": ["main.js", "highlight.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["scripting"]
+}
